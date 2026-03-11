@@ -86,8 +86,8 @@ window.addEventListener('scroll', () => {
         item.style.color = '';
         item.style.background = '';
         if (item.getAttribute('href') === '#' + current) {
-            item.style.color = '#818cf8';
-            item.style.background = 'rgba(99, 102, 241, 0.1)';
+            item.style.color = '#1e3a5f';
+            item.style.background = 'rgba(30, 58, 95, 0.08)';
         }
     });
 });
