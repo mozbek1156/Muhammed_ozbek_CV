@@ -1,4 +1,4 @@
-// ===== Mobil Menü Toggle =====
+// ===== Mobile Menu Toggle =====
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -6,66 +6,88 @@ navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('open');
 });
 
-// Menü linkine tıklandığında menüyü kapat
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('open');
     });
 });
 
-// ===== Scroll Reveal Animasyonu =====
+// ===== Navbar Scroll Effect =====
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// ===== Scroll Reveal =====
 function revealOnScroll() {
     const elements = document.querySelectorAll('.reveal');
     const windowHeight = window.innerHeight;
 
     elements.forEach(el => {
         const top = el.getBoundingClientRect().top;
-        if (top < windowHeight - 80) {
+        if (top < windowHeight - 60) {
             el.classList.add('visible');
         }
     });
 }
 
-// Sayfa yüklendiğinde reveal sınıfını ekle
 document.addEventListener('DOMContentLoaded', () => {
-    // Tüm section ve kartlara reveal sınıfı ekle
+    // Add reveal class to target elements
     const targets = document.querySelectorAll(
-        '.about-grid, .timeline-entry, .skill-card, .project-card, .contact-card, .info-card'
+        '.about-text, .about-info-cards, .info-card, .timeline-entry, .skill-card, .project-card, .contact-card, .hero-stats'
     );
     targets.forEach((el, i) => {
         el.classList.add('reveal');
-        el.style.transitionDelay = `${i * 0.05}s`;
+        el.style.transitionDelay = `${i * 0.06}s`;
     });
 
-    // İlk kontrolü yap
+    // Initial check
     revealOnScroll();
 
-    // Yetenek barlarını animasyonla doldur
-    setTimeout(animateSkillBars, 500);
+    // Animate skill bars after a short delay
+    setTimeout(animateSkillBars, 600);
 });
 
-window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('scroll', () => {
+    revealOnScroll();
+    animateSkillBars();
+});
 
-// ===== Yetenek Barları Animasyonu =====
+// ===== Skill Bars Animation =====
 function animateSkillBars() {
     const bars = document.querySelectorAll('.skill-fill');
     bars.forEach(bar => {
         const level = bar.getAttribute('data-level');
         const rect = bar.getBoundingClientRect();
-        if (rect.top < window.innerHeight) {
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
             bar.style.width = level + '%';
         }
     });
 }
 
-window.addEventListener('scroll', animateSkillBars);
+// ===== Smooth active link highlighting =====
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-links a');
 
-// ===== Navbar scroll efekti =====
 window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
-    } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.85)';
-    }
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+        }
+    });
+    navItems.forEach(item => {
+        item.style.color = '';
+        item.style.background = '';
+        if (item.getAttribute('href') === '#' + current) {
+            item.style.color = '#818cf8';
+            item.style.background = 'rgba(99, 102, 241, 0.1)';
+        }
+    });
 });
