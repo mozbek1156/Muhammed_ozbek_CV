@@ -1,326 +1,419 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhammed Özbek — Portfolio</title>
-    <meta name="description" content="Muhammed Özbek - Computer Engineering Student Portfolio & Resume">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-
+    <meta name="description" content="Muhammed Özbek - Software Engineering Student Portfolio & Resume" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav id="navbar">
-        <div class="nav-brand">M<span class="brand-dot">.</span>Ö</div>
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      <div class="nav-brand">M<span class="brand-dot">.</span>Ö</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <!-- Hero -->
     <section id="hero">
-        <div class="hero-content">
-            <div class="hero-badge">Available for opportunities</div>
-            <h1 class="hero-name">
-                Hi, I'm <span class="gradient-text">Muhammed Özbek</span>
-            </h1>
-            <p class="hero-title">Computer Engineering Student & Aspiring Software Developer</p>
-            <p class="hero-desc">
-                Passionate about algorithms, data structures, and building meaningful software. 
-                Currently exploring probabilistic data structures and numerical methods.
-            </p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
-                <a href="#contact" class="btn-ghost"><i class="fas fa-envelope"></i> Get in Touch</a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">3+</span>
-                    <span class="stat-label">Projects</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Technologies</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number">2026</span>
-                    <span class="stat-label">Graduating</span>
-                </div>
-            </div>
+      <div class="hero-content">
+        <div class="hero-badge">Available for opportunities</div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Muhammed Özbek</span>
+        </h1>
+        <p class="hero-title">Software Engineering Student & Aspiring Developer</p>
+        <p class="hero-desc">
+          Passionate about algorithms, data structures, AI, and building meaningful software. 
+          Currently exploring probabilistic data structures, numerical methods, and artificial intelligence.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+          <a href="#contact" class="btn-ghost"
+            ><i class="fas fa-envelope"></i> Get in Touch</a
+          >
         </div>
-        <div class="hero-visual">
-            <div class="code-window">
-                <div class="code-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                    <span class="code-title">about_me.js</span>
-                </div>
-                <pre class="code-body"><code><span class="kw">const</span> <span class="var">developer</span> = {
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">2028</span>
+            <span class="stat-label">Graduating</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-title">about_me.js</span>
+          </div>
+          <pre
+            class="code-body"
+          ><code><span class="kw">const</span> <span class="var">developer</span> = {
   <span class="prop">name</span>: <span class="str">"Muhammed Özbek"</span>,
-  <span class="prop">role</span>: <span class="str">"Student Developer"</span>,
-  <span class="prop">skills</span>: [<span class="str">"Java"</span>, <span class="str">"C++"</span>, <span class="str">"Python"</span>],
+  <span class="prop">role</span>: <span class="str">"Software Engineer"</span>,
+  <span class="prop">skills</span>: [<span class="str">"Java"</span>, <span class="str">"C++"</span>, <span class="str">"AI"</span>],
   <span class="prop">passion</span>: <span class="str">"Building things"</span>,
-  <span class="prop">coffee</span>: <span class="bool">true</span>
+  <span class="prop">lovesAI</span>: <span class="bool">true</span>
 };</code></pre>
-            </div>
         </div>
-        <div class="hero-bg-glow"></div>
+      </div>
+      <div class="hero-bg-glow"></div>
     </section>
 
     <!-- About -->
     <section id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-user"></i> Introduction</span>
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        I'm a Computer Engineering student with a genuine passion for technology and software development.
-                        My academic focus is on <strong>algorithms</strong>, <strong>data structures</strong>, 
-                        and <strong>software engineering</strong> principles.
-                    </p>
-                    <p>
-                        I believe in continuous learning and hands-on experience. When I'm not studying, 
-                        I'm experimenting with new technologies, contributing to projects, and sharpening 
-                        my problem-solving skills through real-world applications.
-                    </p>
-                    <a href="#contact" class="inline-link">Let's connect <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="about-info-cards">
-                    <div class="info-card">
-                        <div class="info-card-icon"><i class="fas fa-calendar-alt"></i></div>
-                        <span class="info-label">Born</span>
-                        <span class="info-value">2004</span>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <span class="info-label">Location</span>
-                        <span class="info-value">Turkey</span>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-card-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <span class="info-label">Status</span>
-                        <span class="info-value">Student</span>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-card-icon"><i class="fas fa-laptop-code"></i></div>
-                        <span class="info-label">Focus</span>
-                        <span class="info-value">Software Dev</span>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"
+            ><i class="fas fa-user"></i> Introduction</span
+          >
+          <h2 class="section-title">About Me</h2>
         </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a Software Engineering student with a genuine passion for technology, software development,
+              and <strong>artificial intelligence</strong>. My academic focus is on <strong>algorithms</strong>, 
+              <strong>data structures</strong>, and <strong>AI-driven solutions</strong>.
+            </p>
+            <p>
+              I believe in continuous learning and hands-on experience. When I'm not studying, 
+              I'm exploring AI technologies, experimenting with new tools, contributing to projects, 
+              and sharpening my problem-solving skills through real-world applications.
+            </p>
+            <a href="#contact" class="inline-link"
+              >Let's connect <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="about-info-cards">
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <span class="info-label">Born</span>
+              <span class="info-value">2001</span>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <span class="info-label">Location</span>
+              <span class="info-value">Turkey</span>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <span class="info-label">Status</span>
+              <span class="info-value">Undergraduate</span>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <span class="info-label">Focus</span>
+              <span class="info-value">Software & AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Education -->
     <section id="education">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Background</span>
-                <h2 class="section-title">Education</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-entry">
-                    <div class="timeline-dot"><i class="fas fa-university"></i></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2022 — Present</span>
-                        <h3>Your University Name</h3>
-                        <p>B.Sc. in Computer Engineering</p>
-                        <div class="timeline-tags">
-                            <span>Algorithms</span>
-                            <span>Data Structures</span>
-                            <span>Software Eng.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-entry">
-                    <div class="timeline-dot"><i class="fas fa-school"></i></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2018 — 2022</span>
-                        <h3>Your High School Name</h3>
-                        <p>Science & Mathematics Track</p>
-                        <div class="timeline-tags">
-                            <span>Mathematics</span>
-                            <span>Physics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"
+            ><i class="fas fa-graduation-cap"></i> Background</span
+          >
+          <h2 class="section-title">Education</h2>
         </div>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <div class="timeline-dot"><i class="fas fa-university"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023 — Present</span>
+              <h3>Kırklareli University</h3>
+              <p>B.Sc. in Software Engineering</p>
+              <div class="timeline-tags">
+                <span>Algorithms</span>
+                <span>Data Structures</span>
+                <span>AI</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-entry">
+            <div class="timeline-dot"><i class="fas fa-school"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2016 — 2020</span>
+              <h3>Kadriye Moroğlu Anadolu Lisesi</h3>
+              <p>Science & Mathematics (Sayısal)</p>
+              <div class="timeline-tags">
+                <span>Mathematics</span>
+                <span>Physics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills -->
     <section id="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-tools"></i> Expertise</span>
-                <h2 class="section-title">Skills & Technologies</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fab fa-java skill-logo"></i>
-                        <h4>Java</h4>
-                    </div>
-                    <p class="skill-desc">OOP, data structures, algorithm implementation</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
-                    <span class="skill-level">Intermediate</span>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fab fa-html5 skill-logo"></i>
-                        <h4>HTML / CSS</h4>
-                    </div>
-                    <p class="skill-desc">Responsive design, modern layouts, animations</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="70"></div></div>
-                    <span class="skill-level">Intermediate</span>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fab fa-js-square skill-logo"></i>
-                        <h4>JavaScript</h4>
-                    </div>
-                    <p class="skill-desc">DOM manipulation, async programming, ES6+</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="60"></div></div>
-                    <span class="skill-level">Growing</span>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fab fa-python skill-logo"></i>
-                        <h4>Python</h4>
-                    </div>
-                    <p class="skill-desc">Scripting, automation, data analysis basics</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="50"></div></div>
-                    <span class="skill-level">Learning</span>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fab fa-git-alt skill-logo"></i>
-                        <h4>Git / GitHub</h4>
-                    </div>
-                    <p class="skill-desc">Version control, branching, collaboration</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="65"></div></div>
-                    <span class="skill-level">Intermediate</span>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fas fa-brain skill-logo"></i>
-                        <h4>Problem Solving</h4>
-                    </div>
-                    <p class="skill-desc">Analytical thinking, algorithm design, debugging</p>
-                    <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
-                    <span class="skill-level">Strong</span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"
+            ><i class="fas fa-tools"></i> Expertise</span
+          >
+          <h2 class="section-title">Skills & Technologies</h2>
         </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fab fa-java skill-logo"></i>
+              <h4>Java</h4>
+            </div>
+            <p class="skill-desc">
+              OOP, data structures, algorithm implementation
+            </p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-level="75"></div>
+            </div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fab fa-html5 skill-logo"></i>
+              <h4>HTML / CSS</h4>
+            </div>
+            <p class="skill-desc">
+              Responsive design, modern layouts, animations
+            </p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-level="70"></div>
+            </div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fab fa-js-square skill-logo"></i>
+              <h4>JavaScript</h4>
+            </div>
+            <p class="skill-desc">DOM manipulation, async programming, ES6+</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-level="60"></div>
+            </div>
+            <span class="skill-level">Growing</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fab fa-python skill-logo"></i>
+              <h4>Python</h4>
+            </div>
+            <p class="skill-desc">
+              Scripting, automation, data analysis basics
+            </p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-level="50"></div>
+            </div>
+            <span class="skill-level">Learning</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fab fa-git-alt skill-logo"></i>
+              <h4>Git / GitHub</h4>
+            </div>
+            <p class="skill-desc">Version control, branching, collaboration</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-level="65"></div>
+            </div>
+            <span class="skill-level">Intermediate</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <i class="fas fa-brain skill-logo"></i>
+              <h4>Problem Solving</h4>
+            </div>
+            <p class="skill-desc">
+              Analytical thinking, algorithm design, debugging
+            </p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-level="80"></div>
+            </div>
+            <span class="skill-level">Strong</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects -->
     <section id="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-code"></i> Portfolio</span>
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-top">
-                        <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
-                        <div class="project-links">
-                            <a href="https://github.com/mozbek1156/hyperloglog" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>HyperLogLog Implementation</h3>
-                    <p>Implementation and theoretical analysis of the HyperLogLog probabilistic data structure for cardinality estimation in Java.</p>
-                    <div class="project-tags">
-                        <span>Java</span>
-                        <span>Algorithms</span>
-                        <span>Data Structures</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-top">
-                        <div class="project-icon"><i class="fas fa-calculator"></i></div>
-                        <div class="project-links">
-                            <a href="#" title="Details"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3>Numerical Analysis</h3>
-                    <p>Implementation of numerical solution methods including the Bisection method for root finding in C++.</p>
-                    <div class="project-tags">
-                        <span>C++</span>
-                        <span>Math</span>
-                        <span>Analysis</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-top">
-                        <div class="project-icon"><i class="fas fa-globe"></i></div>
-                        <div class="project-links">
-                            <a href="#" title="You're here"><i class="fas fa-check-circle"></i></a>
-                        </div>
-                    </div>
-                    <h3>Portfolio Website</h3>
-                    <p>This responsive portfolio website built from scratch with HTML, CSS, and vanilla JavaScript.</p>
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-code"></i> Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
         </div>
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-top">
+              <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/mozbek1156/hyperloglog"
+                  target="_blank"
+                  title="View on GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <h3>HyperLogLog Implementation</h3>
+            <p>
+              Implementation and theoretical analysis of the HyperLogLog
+              probabilistic data structure for cardinality estimation in Java.
+            </p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Algorithms</span>
+              <span>Data Structures</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-top">
+              <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="project-links">
+                <a href="https://github.com/mozbek1156/NYP-Proje-Odevi-master" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>OOP Project</h3>
+            <p>Object-Oriented Programming project demonstrating software design principles and clean code practices.</p>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>OOP</span>
+              <span>Software Design</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-top">
+              <div class="project-icon"><i class="fas fa-calculator"></i></div>
+              <div class="project-links">
+                <a href="#" title="Details"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <h3>Numerical Analysis</h3>
+            <p>
+              Implementation of numerical solution methods including the
+              Bisection method for root finding in C++.
+            </p>
+            <div class="project-tags">
+              <span>C++</span>
+              <span>Math</span>
+              <span>Analysis</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-top">
+              <div class="project-icon"><i class="fas fa-globe"></i></div>
+              <div class="project-links">
+                <a href="#" title="You're here"
+                  ><i class="fas fa-check-circle"></i
+                ></a>
+              </div>
+            </div>
+            <h3>Portfolio Website</h3>
+            <p>
+              This responsive portfolio website built from scratch with HTML,
+              CSS, and vanilla JavaScript.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag"><i class="fas fa-paper-plane"></i> Reach Out</span>
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">I'm always open to new opportunities, collaborations, and conversations.</p>
-            </div>
-            <div class="contact-grid">
-                <a href="https://github.com/mozbek1156" target="_blank" class="contact-card">
-                    <i class="fab fa-github contact-icon"></i>
-                    <span class="contact-label">GitHub</span>
-                    <span class="contact-value">mozbek1156</span>
-                </a>
-                <a href="mailto:email@example.com" class="contact-card">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <span class="contact-label">E-mail</span>
-                    <span class="contact-value">email@example.com</span>
-                </a>
-                <a href="https://linkedin.com/in/" target="_blank" class="contact-card">
-                    <i class="fab fa-linkedin contact-icon"></i>
-                    <span class="contact-label">LinkedIn</span>
-                    <span class="contact-value">Connect with me</span>
-                </a>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"
+            ><i class="fas fa-paper-plane"></i> Reach Out</span
+          >
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            I'm always open to new opportunities, collaborations, and
+            conversations.
+          </p>
         </div>
+        <div class="contact-grid">
+          <a
+            href="https://github.com/mozbek1156"
+            target="_blank"
+            class="contact-card"
+          >
+            <i class="fab fa-github contact-icon"></i>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">mozbek1156</span>
+          </a>
+          <a href="mailto:mhmdozbek.23@gmail.com" class="contact-card">
+            <i class="fas fa-envelope contact-icon"></i>
+            <span class="contact-label">E-mail</span>
+            <span class="contact-value">mhmdozbek.23@gmail.com</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammed-%C3%B6zbek-157405356/"
+            target="_blank"
+            class="contact-card"
+          >
+            <i class="fab fa-linkedin contact-icon"></i>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Muhammed Özbek</span>
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <div class="container footer-content">
-            <p>Designed & Built by <strong>Muhammed Özbek</strong></p>
-            <p class="footer-sub">© 2026. All rights reserved.</p>
-        </div>
+      <div class="container footer-content">
+        <p>Designed & Built by <strong>Muhammed Özbek</strong></p>
+        <p class="footer-sub">© 2026. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
